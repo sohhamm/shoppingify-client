@@ -25,7 +25,9 @@ export default function Tabs({}: TabsProps) {
             <Tooltip.Trigger>
               <div
                 className={
-                  activeTab === idx ? `border-l-[6px] border-[#F9A109]` : ``
+                  activeTab === idx
+                    ? `border-l-[6px] border-[#F9A109] w-full`
+                    : ``
                 }
                 onClick={() => setActiveTab(idx)}
               >
