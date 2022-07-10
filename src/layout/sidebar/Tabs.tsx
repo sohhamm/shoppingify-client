@@ -20,7 +20,7 @@ export default function Tabs({}: TabsProps) {
   return (
     <div className="flex flex-col items-center gap-y-[70px]">
       {initialTabs.map((tab, idx) => (
-        <Tooltip.Provider delayDuration={0}>
+        <Tooltip.Provider delayDuration={0} key={tab.name}>
           <Tooltip.Root>
             <Tooltip.Trigger>
               <div
